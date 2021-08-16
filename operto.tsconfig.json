@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@UIComponents": ["ui-library/Components/*"],
+      "@UIStyled": ["ui-library/Styled/*"]
+    }
+  },
+  "include": ["src", "declarations.d.ts"]
+}

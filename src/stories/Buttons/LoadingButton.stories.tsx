@@ -1,27 +1,31 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { FooterContainer } from 'library/SmartCards/StyledSmartCard';
 
-import { Button } from './Button';
+import LoadingButton from 'library/Buttons/LoadingButton';
 
 export default {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Operto/Button',
+  component: FooterContainer,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    fill: { control: 'color' },
   },
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof FooterContainer>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof FooterContainer> = args => (
+  <FooterContainer {...args}>footer</FooterContainer>
+);
 
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: 'Button 1',
+  title: 'Smart Card',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
+  title: 'Smart Card with Footer',
 };
 
 export const Large = Template.bind({});
