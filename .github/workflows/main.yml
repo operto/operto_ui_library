@@ -41,6 +41,6 @@ jobs:
         env:
           DISTRIBUTION: ${{ secrets.PROD_DISTRIBUTION }}
           PATHS: '/index.html'
-          AWS_ACCESS_KEY_ID: ${{ secrets.STAGING_AWS_ACCESS_KEY_ID }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_ACCESS_SECRET }}
           AWS_REGION: 'us-west-2'
