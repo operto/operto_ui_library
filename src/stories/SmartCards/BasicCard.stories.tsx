@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React, { Props } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';

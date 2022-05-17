@@ -7,7 +7,7 @@ import { Typography, Button, IconButton, ListItem, ListItemIcon } from '@materia
 //   return <FooterContainerComponent>{props.children}</FooterContainerComponent>;
 // };
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled.div<{ justify: string }>`
   display: flex;
   justify-content: ${props => (props.justify ? props.justify : 'flex-end')};
   color: ${props => (props.theme.fill ? props.theme.textColorWhite : props.theme.textColor)};

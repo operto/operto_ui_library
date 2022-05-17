@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { createTheme } from '@material-ui/core/styles';
 import { palette, OpertoTheme } from './Theme';
 
