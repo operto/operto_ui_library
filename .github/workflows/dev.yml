@@ -1,4 +1,4 @@
-name: UI Library Production Deployment
+name: UI Library Development Deployment
 
 on:
   push:
