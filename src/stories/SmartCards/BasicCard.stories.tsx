@@ -1,17 +1,17 @@
 import React, { Props } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
-import { OpertoTheme } from 'library/Styles/Theme';
+import { OpertoTheme } from 'lib/Styles/Theme';
 import {
   MainLabel,
   FooterContainer,
   SmartCardButton,
   SmartCardIconButton,
-} from 'library/SmartCards/StyledSmartCard';
+} from 'lib/SmartCards/StyledSmartCard';
 import HelpIcon from '@material-ui/icons/Help';
 import styled from 'styled-components';
 
-import SmartCard from 'library/SmartCards/SmartCard';
+import SmartCard from 'lib/SmartCards/SmartCard';
 
 export default {
   title: 'Operto/Smart Cards/Basic Card',

@@ -1,8 +1,8 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { FooterContainer } from 'library/SmartCards/StyledSmartCard';
+import { FooterContainer } from 'lib/SmartCards/StyledSmartCard';
 
-import LoadingButton from 'library/Buttons/LoadingButton';
+import LoadingButton from 'lib/Buttons/LoadingButton';
 
 export default {
   title: 'Operto/Button',

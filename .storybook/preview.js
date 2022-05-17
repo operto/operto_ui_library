@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
-import { OpertoTheme } from 'library/Styles/Theme';
-import MuiTheme from 'library/Styles/MuiTheme';
+import { OpertoTheme } from 'lib/Styles/Theme';
+import MuiTheme from 'lib/Styles/MuiTheme';
 
 export const decorators = [
   Story => (

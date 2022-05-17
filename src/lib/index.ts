@@ -1,1 +1,1 @@
-export { default as SmartCard } from 'library/SmartCards/SmartCard';
+export { default as SmartCard } from 'lib/SmartCards/SmartCard';
