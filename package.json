@@ -1,7 +1,13 @@
 {
-  "name": "operto-ui",
+  "name": "@operto/ui",
   "version": "1.0.0",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/operto/operto_ui_library.git"
+  },
+  "exports": {
+    "./": "./src/library"
+  },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "5.0.0-alpha.29",
@@ -65,5 +71,13 @@
     "@storybook/node-logger": "^6.3.7",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.7"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "bugs": {
+    "url": "https://github.com/operto/operto_ui_library/issues"
+  },
+  "homepage": "https://github.com/operto/operto_ui_library#readme",
+  "main": "src/lib/index.ts",
+  "author": "",
+  "license": "ISC"
 }
