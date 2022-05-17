@@ -34,7 +34,7 @@ jobs:
           AWS_S3_BUCKET: ${{ secrets.PROD_AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_ACCESS_SECRET }}
-          SOURCE_DIR: build
+          SOURCE_DIR: storybook-static
           # Invalidate Cloudfront (this action)
       - name: invalidate
         uses: chetan/invalidate-cloudfront-action@v2
