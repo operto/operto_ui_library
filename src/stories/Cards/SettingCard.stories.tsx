@@ -27,6 +27,5 @@ export default {
   export const Basic = Template.bind({});
 Basic.args = {
   title: 'Setting Card',
-  description: 'HI'
 };
 
