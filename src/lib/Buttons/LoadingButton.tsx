@@ -1,18 +1,12 @@
 import * as React from 'react';
-
-// import styled from 'styled-components';
-// import {BaseContainer} from 'Style/Components';
+import { Button } from '@mui/material';
 
 export interface LoadingButtonProps {}
 
 const LoadingButton = (props: LoadingButtonProps) => (
-<div>
-Hellow World LoadingButton
-</div>
+  <Button variant='contained' color='primary'>
+    LoadingButton
+  </Button>
 );
 
-// const MainContainer = styled(BaseContainer)`
-
-//`;
-
-   export default LoadingButton;
+export default LoadingButton;
