@@ -45,6 +45,7 @@ const Template: ComponentStory<typeof SmartCard> = (args: Props) => (
 export const Basic = Template.bind({});
 Basic.args = {
   title: 'Basic Smart Card',
+  isMainActivity: true
 };
 
 export const WithFooter = Template.bind({});
