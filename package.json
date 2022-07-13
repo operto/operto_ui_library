@@ -1,13 +1,20 @@
 {
-  "name": "@operto/ui",
+  "name": "@operto/ui-library",
+  "description": "Operto's react component library",
   "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/operto/operto_ui_library.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     "./": "./src/library"
   },
+  "files": [
+    ""
+  ],
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "5.0.0-alpha.29",
@@ -34,7 +41,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "publishNew": "npm i && npm run build && npm publish"
   },
   "eslintConfig": {
     "extends": [
@@ -73,7 +81,6 @@
     "@storybook/react": "^6.3.7",
     "webpack-merge": "^5.8.0"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "bugs": {
     "url": "https://github.com/operto/operto_ui_library/issues"
   },
