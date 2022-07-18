@@ -35,7 +35,7 @@ export interface SmartCardProps {
   isMainActivity: boolean;
 }
 
-const SmartCard = ({
+export const SmartCardComponent = ({
   title,
   children,
   menu,
@@ -147,4 +147,4 @@ const MainContainer = styled(Paper)<{
   }
 `;
 
-export default SmartCard;
+export type { SmartCardProps };

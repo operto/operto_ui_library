@@ -1,1 +1,5 @@
-export { default as SmartCard } from 'lib/SmartCards/SmartCard';
+import SmartCard from 'lib/SmartCards';
+
+export {
+    SmartCard
+}
