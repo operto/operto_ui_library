@@ -16,7 +16,11 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
-import { SmartCard, SettingCard } from 'lib';
+// import { SmartCard, SettingCard } from 'lib';
 // import SettingCard from 'lib/Cards';
 
-export { SmartCard, SettingCard };
+// export { SmartCard, SettingCard };
+
+import * as SettingCard from './lib/Cards';
+
+export { SettingCard };
