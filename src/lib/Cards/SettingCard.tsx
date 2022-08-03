@@ -2,7 +2,7 @@
 
 import { Typography } from '@mui/material';
 import React from 'react';
-import AddCard from './AddCard'
+import AddCard from './AddCard';
 
 type SettingCardProps = {
   title?: string;
@@ -31,4 +31,4 @@ export const SettingCard: React.FC<SettingCardProps> = props => {
   );
 };
 
-export default SettingCard;
+export type { SettingCardProps };

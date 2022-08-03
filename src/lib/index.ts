@@ -1,2 +1,4 @@
-export { default as SmartCard } from 'lib/SmartCards/SmartCard';
-export { default as SettingCard } from 'lib/Cards/SettingCard';
+import SmartCard from 'lib/SmartCards';
+import SettingCard from 'lib/Cards';
+
+export { SmartCard, SettingCard };
