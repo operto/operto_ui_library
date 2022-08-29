@@ -1,11 +1,14 @@
 {
-  "name": "@operto/ui-library",
-  "version": "1.1.0",
-  "description": "test",
+  "name": "@Operto/ui-library",
+  "version": "1.2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/operto/operto_ui_library.git"
+  },
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.13",
     "@rollup/plugin-commonjs": "^22.0.2",
@@ -44,5 +47,14 @@
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/operto/operto_ui_library/issues"
+  },
+  "homepage": "https://github.com/operto/operto_ui_library#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "description": ""
 }
