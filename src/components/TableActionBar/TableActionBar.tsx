@@ -10,7 +10,7 @@ interface TableActionBarProps {
   showSecondary?: boolean;
   secondaryContent?: any;
   fullWidth?: boolean;
-  isMobile?: boolean;
+  isMobile: boolean;
 }
 
 export const TableActionBar = ({
