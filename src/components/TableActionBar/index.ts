@@ -1,1 +1,1 @@
-export { TableActionBar } from "./TableActionBar";
+export { TableActionbar } from "./TableActionbar";

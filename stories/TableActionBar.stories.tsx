@@ -1,18 +1,18 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { ThemeProvider } from "styled-components";
-import { TableActionBar } from "../src/components/TableActionBar/TableActionBar";
+import { TableActionbar } from "../src/components/TableActionbar/TableActionbar";
 import { Typography } from "@mui/material";
 
 export default {
-  title: "TableActionBar/Table Action Bar",
+  title: "TableActionbar/Table Action Bar",
   mode: "regular",
-  component: TableActionBar,
-} as ComponentMeta<typeof TableActionBar>;
+  component: TableActionbar,
+} as ComponentMeta<typeof TableActionbar>;
 
-const Template: ComponentStory<typeof TableActionBar> = (args) => (
+const Template: ComponentStory<typeof TableActionbar> = (args) => (
   <ThemeProvider theme={{ ...args }}>
-    <TableActionBar {...args}></TableActionBar>
+    <TableActionbar {...args}></TableActionbar>
   </ThemeProvider>
 );
 

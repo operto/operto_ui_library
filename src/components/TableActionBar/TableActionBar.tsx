@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Collapse } from "@mui/material";
 import { BaseContainer } from "../BaseComponents/BaseComponents";
 
-interface TableActionBarProps {
+interface TableActionbarProps {
   endSection?: any;
   startSection?: any;
   showSecondary?: boolean;
@@ -13,14 +13,14 @@ interface TableActionBarProps {
   isMobile: boolean;
 }
 
-export const TableActionBar = ({
+export const TableActionbar = ({
   endSection,
   startSection,
   showSecondary,
   secondaryContent,
   fullWidth,
   isMobile,
-}: TableActionBarProps) => {
+}: TableActionbarProps) => {
   return (
     <MainContainer isMobile={isMobile}>
       <PrimaryContainer>
