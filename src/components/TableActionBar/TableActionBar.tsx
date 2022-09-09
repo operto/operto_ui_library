@@ -40,13 +40,6 @@ export const TableActionBar = ({
   );
 };
 
-export const Base = styled.div`
-  color: ${(props: any) =>
-    props.color ? `${props.color} !important` : props.theme.textColor};
-  height: ${(props: any) => props.height};
-  width: ${(props: any) => props.width};
-`;
-
 const SecondaryActionBar = styled.div`
   height: 54px;
   display: flex;
