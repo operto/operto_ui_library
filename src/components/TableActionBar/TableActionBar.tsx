@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import { Collapse } from "@mui/material";
-import { BaseContainer } from "components/BaseComponents/BaseComponents";
+import { BaseContainer } from "../BaseComponents/BaseComponents";
 
 interface TableActionBarProps {
   endSection?: any;
