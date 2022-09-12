@@ -90,10 +90,7 @@ const MainContainer = styled(BaseContainer)<{ isMobile: boolean }>`
   position: relative;
   border-top-left-radius: 10px 10px;
   border-top-right-radius: 10px 10px;
-  border-color: ${(props) => {
-    console.log(props.theme);
-    return props.theme.borderColor;
-  }};
+  border-color: ${(props) => props.theme.borderColor};
   border-width: 1px;
   border-style: solid;
   padding: ${(props) => (props.isMobile ? "12px" : "12px 24px 12px")};
