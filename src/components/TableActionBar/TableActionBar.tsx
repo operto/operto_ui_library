@@ -1,8 +1,8 @@
 import React from "react";
-
-import styled from "styled-components";
 import { Collapse } from "@mui/material";
 import { BaseContainer } from "../BaseComponents/BaseComponents";
+import styled, { ThemeProvider } from "styled-components";
+import { OpertoTheme } from "../../Themes";
 
 interface TableActionbarProps {
   endSection?: any;
@@ -22,21 +22,23 @@ export const TableActionbar = ({
   isMobile,
 }: TableActionbarProps) => {
   return (
-    <MainContainer isMobile={isMobile}>
-      <PrimaryContainer>
-        {startSection && (
-          <StartSection isMobile={isMobile} fullWidth={fullWidth}>
-            {startSection}
-          </StartSection>
-        )}
-        {endSection && <EndSection>{endSection}</EndSection>}
-      </PrimaryContainer>
-      <SecondaryContainer>
-        <Collapse in={showSecondary}>
-          <SecondaryActionBar>{secondaryContent}</SecondaryActionBar>
-        </Collapse>
-      </SecondaryContainer>
-    </MainContainer>
+    <ThemeProvider theme={OpertoTheme}>
+      <MainContainer isMobile={isMobile}>
+        <PrimaryContainer>
+          {startSection && (
+            <StartSection isMobile={isMobile} fullWidth={fullWidth}>
+              {startSection}
+            </StartSection>
+          )}
+          {endSection && <EndSection>{endSection}</EndSection>}
+        </PrimaryContainer>
+        <SecondaryContainer>
+          <Collapse in={showSecondary}>
+            <SecondaryActionBar>{secondaryContent}</SecondaryActionBar>
+          </Collapse>
+        </SecondaryContainer>
+      </MainContainer>
+    </ThemeProvider>
   );
 };
 
@@ -88,7 +90,10 @@ const MainContainer = styled(BaseContainer)<{ isMobile: boolean }>`
   position: relative;
   border-top-left-radius: 10px 10px;
   border-top-right-radius: 10px 10px;
-  border-color: ${(props) => props.theme.borderColor};
+  border-color: ${(props) => {
+    console.log(props.theme);
+    return props.theme.borderColor;
+  }};
   border-width: 1px;
   border-style: solid;
   padding: ${(props) => (props.isMobile ? "12px" : "12px 24px 12px")};
