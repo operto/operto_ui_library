@@ -3,6 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { ThemeProvider } from "styled-components";
 import { TableActionbar } from "../src/components/TableActionbar/TableActionbar";
 import { Typography } from "@mui/material";
+import { OpertoTheme } from "../src/Themes";
 
 export default {
   title: "TableActionbar/Table Action Bar",
@@ -11,7 +12,7 @@ export default {
 } as ComponentMeta<typeof TableActionbar>;
 
 const Template: ComponentStory<typeof TableActionbar> = (args) => (
-  <ThemeProvider theme={{ ...args }}>
+  <ThemeProvider theme={OpertoTheme}>
     <TableActionbar {...args}></TableActionbar>
   </ThemeProvider>
 );
