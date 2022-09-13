@@ -1,7 +1,7 @@
 import React from "react";
 import { Collapse } from "@mui/material";
 import { BaseContainer } from "../BaseComponents/BaseComponents";
-import styled, { ThemeProvider } from "styled-components";
+import styled from "styled-components";
 
 interface TableActionbarProps {
   endSection?: any;
