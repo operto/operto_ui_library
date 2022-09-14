@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { TableActionbar } from "../src/components/TableActionbar/TableActionbar";
 import { Typography } from "@mui/material";
 import { OpertoTheme } from "../src/Themes";
+//comment table
 
 export default {
   title: "TableActionbar/Table Action Bar",

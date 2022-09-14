@@ -3,3 +3,4 @@ export * from "./AddCard";
 export * from "./SettingCard";
 export * from "./TableActionbar";
 export * from "./BaseComponents";
+export * from "./TestComponent";

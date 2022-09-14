@@ -92,6 +92,6 @@ const MainContainer = styled(BaseContainer)<{ isMobile: boolean }>`
     return props.theme.borderColor;
   }};
   border-width: 1px;
-  border-style: solid;
+  border-style: dotted;
   padding: ${(props) => (props.isMobile ? "12px" : "12px 24px 12px")};
 `;
