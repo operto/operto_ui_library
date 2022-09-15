@@ -2,11 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export const TestComponent = () => {
-  return (
-    <>
-      <StyledText>"Here is some Text</StyledText>
-    </>
-  );
+  return <StyledText>Here is some Text</StyledText>;
 };
 
 const StyledText = styled.p`
