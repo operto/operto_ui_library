@@ -2,8 +2,6 @@ import React from "react";
 import { Collapse } from "@mui/material";
 import { BaseContainer } from "../BaseComponents/BaseComponents";
 import styled from "styled-components";
-import { ThemeProvider } from "styled-components";
-import { OpertoTheme } from "../../Themes/Theme";
 
 interface TableActionbarProps {
   endSection?: any;
