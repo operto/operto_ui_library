@@ -1,2 +1,2 @@
 /// <reference types="react" />
-export declare const TestComponent: (props: any) => JSX.Element;
+export declare const TestComponent: () => JSX.Element;

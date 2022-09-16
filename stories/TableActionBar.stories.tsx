@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { ThemeProvider } from "styled-components";
-import { TableActionbar } from "../src/components/TableActionbar/TableActionbar";
+import { TableActionbar } from "../src/components/TableActionBar/TableActionBar";
 import { Typography } from "@mui/material";
 import { OpertoTheme } from "../src/Themes";
 //comment table
