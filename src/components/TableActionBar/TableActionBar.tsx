@@ -23,23 +23,21 @@ export const TableActionbar = ({
   isMobile,
 }: TableActionbarProps) => {
   return (
-    <ThemeProvider theme={OpertoTheme}>
-      <MainContainer isMobile={isMobile}>
-        <PrimaryContainer>
-          {startSection && (
-            <StartSection isMobile={isMobile} fullWidth={fullWidth}>
-              {startSection}
-            </StartSection>
-          )}
-          {endSection && <EndSection>{endSection}</EndSection>}
-        </PrimaryContainer>
-        <SecondaryContainer>
-          <Collapse in={showSecondary}>
-            <SecondaryActionBar>{secondaryContent}</SecondaryActionBar>
-          </Collapse>
-        </SecondaryContainer>
-      </MainContainer>
-    </ThemeProvider>
+    <MainContainer isMobile={isMobile}>
+      <PrimaryContainer>
+        {startSection && (
+          <StartSection isMobile={isMobile} fullWidth={fullWidth}>
+            {startSection}
+          </StartSection>
+        )}
+        {endSection && <EndSection>{endSection}</EndSection>}
+      </PrimaryContainer>
+      <SecondaryContainer>
+        <Collapse in={showSecondary}>
+          <SecondaryActionBar>{secondaryContent}</SecondaryActionBar>
+        </Collapse>
+      </SecondaryContainer>
+    </MainContainer>
   );
 };
 
