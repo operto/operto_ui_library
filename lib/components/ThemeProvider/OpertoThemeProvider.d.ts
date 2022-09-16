@@ -1,2 +1,6 @@
-/// <reference types="react" />
-export declare const OpertoThemeProvider: () => JSX.Element;
+import { ReactNode } from "react";
+export declare const OpertoThemeProvider: ({
+  children,
+}: {
+  children: ReactNode;
+}) => JSX.Element;

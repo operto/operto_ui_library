@@ -4,7 +4,8 @@ import { ThemeProvider } from "styled-components";
 import { TableActionbar } from "../src/components/TableActionBar/TableActionBar";
 import { Typography } from "@mui/material";
 import { OpertoTheme } from "../src/Themes";
-//comment table
+import { OpertoThemeProvider } from "../src/components/ThemeProvider/OpertoThemeProvider";
+//comment ta
 
 export default {
   title: "TableActionbar/Table Action Bar",
@@ -13,9 +14,9 @@ export default {
 } as ComponentMeta<typeof TableActionbar>;
 
 const Template: ComponentStory<typeof TableActionbar> = (args) => (
-  <ThemeProvider theme={OpertoTheme}>
+  <OpertoThemeProvider>
     <TableActionbar {...args}></TableActionbar>
-  </ThemeProvider>
+  </OpertoThemeProvider>
 );
 
 export const Basic = Template.bind({});
