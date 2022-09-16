@@ -2,6 +2,8 @@ import React from "react";
 import { Collapse } from "@mui/material";
 import { BaseContainer } from "../BaseComponents/BaseComponents";
 import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
+import { OpertoTheme } from "../../Themes/Theme";
 
 interface TableActionbarProps {
   endSection?: any;
@@ -21,21 +23,23 @@ export const TableActionbar = ({
   isMobile,
 }: TableActionbarProps) => {
   return (
-    <MainContainer isMobile={isMobile}>
-      <PrimaryContainer>
-        {startSection && (
-          <StartSection isMobile={isMobile} fullWidth={fullWidth}>
-            {startSection}
-          </StartSection>
-        )}
-        {endSection && <EndSection>{endSection}</EndSection>}
-      </PrimaryContainer>
-      <SecondaryContainer>
-        <Collapse in={showSecondary}>
-          <SecondaryActionBar>{secondaryContent}</SecondaryActionBar>
-        </Collapse>
-      </SecondaryContainer>
-    </MainContainer>
+    <ThemeProvider theme={OpertoTheme}>
+      <MainContainer isMobile={isMobile}>
+        <PrimaryContainer>
+          {startSection && (
+            <StartSection isMobile={isMobile} fullWidth={fullWidth}>
+              {startSection}
+            </StartSection>
+          )}
+          {endSection && <EndSection>{endSection}</EndSection>}
+        </PrimaryContainer>
+        <SecondaryContainer>
+          <Collapse in={showSecondary}>
+            <SecondaryActionBar>{secondaryContent}</SecondaryActionBar>
+          </Collapse>
+        </SecondaryContainer>
+      </MainContainer>
+    </ThemeProvider>
   );
 };
 
