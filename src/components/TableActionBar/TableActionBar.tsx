@@ -1,10 +1,9 @@
 import React from "react";
-
-import styled from "styled-components";
 import { Collapse } from "@mui/material";
-import { BaseContainer } from "components/BaseComponents/BaseComponents";
+import { BaseContainer } from "../BaseComponents/BaseComponents";
+import styled from "styled-components";
 
-interface TableActionBarProps {
+interface TableActionbarProps {
   endSection?: any;
   startSection?: any;
   showSecondary?: boolean;
@@ -13,14 +12,14 @@ interface TableActionBarProps {
   isMobile: boolean;
 }
 
-export const TableActionBar = ({
+export const TableActionbar = ({
   endSection,
   startSection,
   showSecondary,
   secondaryContent,
   fullWidth,
   isMobile,
-}: TableActionBarProps) => {
+}: TableActionbarProps) => {
   return (
     <MainContainer isMobile={isMobile}>
       <PrimaryContainer>
@@ -39,13 +38,6 @@ export const TableActionBar = ({
     </MainContainer>
   );
 };
-
-export const Base = styled.div`
-  color: ${(props: any) =>
-    props.color ? `${props.color} !important` : props.theme.textColor};
-  height: ${(props: any) => props.height};
-  width: ${(props: any) => props.width};
-`;
 
 const SecondaryActionBar = styled.div`
   height: 54px;
@@ -95,7 +87,10 @@ const MainContainer = styled(BaseContainer)<{ isMobile: boolean }>`
   position: relative;
   border-top-left-radius: 10px 10px;
   border-top-right-radius: 10px 10px;
-  border-color: ${(props) => props.theme.borderColor};
+  border-color: ${(props) => {
+    console.log(props.theme);
+    return props.theme.borderColor;
+  }};
   border-width: 1px;
   border-style: solid;
   padding: ${(props) => (props.isMobile ? "12px" : "12px 24px 12px")};

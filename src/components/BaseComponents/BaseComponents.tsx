@@ -3,6 +3,7 @@ import styledBy from "styled-by";
 
 // All components here should extend these so they have the basic
 // accessible props
+//testing
 export const Base = styled.div`
   color: ${(props: any) =>
     props.color ? `${props.color} !important` : props.theme.textColor};
