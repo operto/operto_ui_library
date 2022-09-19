@@ -1,9 +1,4 @@
 import { ReactNode } from "react";
-export declare const OpertoThemeProvider: (
-  {
-    children,
-  }: {
+export declare const OpertoThemeProvider: ({ children }: {
     children: ReactNode;
-  },
-  theme: {}
-) => JSX.Element;
+}, theme: {}) => JSX.Element;
