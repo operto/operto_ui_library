@@ -36,14 +36,15 @@
   },
   "peerDependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^5.3.5"
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/material": "^5.10.2",
-    "styled-by": "^0.3.0"
+    "styled-by": "^0.3.0",
+    "styled-components": "^5.3.5",
+    "@types/styled-components": "^5.1.9"
   },
   "scripts": {
     "build": "rollup -c",
