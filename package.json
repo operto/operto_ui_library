@@ -1,5 +1,5 @@
 {
-  "name": "@Operto/ui-library",
+  "name": "@operto/ui-library",
   "version": "1.2.0",
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
     "@types/styled-components": "^5.1.26",
     "babel-loader": "^8.2.5",
     "postcss": "^8.4.16",
-    "react": "^18.2.0",
+    "react": "18.0.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.78.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -41,7 +41,10 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "@mui/material": "^5.10.2"
+    "@mui/material": "^5.10.2",
+    "styled-by": "^0.3.0",
+    "styled-components": "^5.3.5",
+    "@types/styled-components": "^5.1.9"
   },
   "scripts": {
     "build": "rollup -c",
