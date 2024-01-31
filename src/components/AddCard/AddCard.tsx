@@ -87,6 +87,7 @@ const CardContainer = styled(Card)`
     border-radius: 10px;
     border: 0.5px solid #d4d4d4;
     margin-bottom: 20px;
+    overflow: visible;
   }
 `;
 
